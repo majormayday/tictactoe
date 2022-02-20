@@ -10,21 +10,27 @@
 </head>
 <body>
     <div id="container">
-        <div id="header">Header</div>
+        <div id="header">Tic-Tac-Toe</div>
         <div id="playArea">
+            <div id="notifications">Click Start to play!</div>
             <div id="tttBoard">
-                <div class="square square0"></div>
-                <div class="square square1"></div>
-                <div class="square square2"></div>
-                <div class="square square3"></div>
-                <div class="square square4"></div>
-                <div class="square square5"></div>
-                <div class="square square6"></div>
-                <div class="square square7"></div>
-                <div class="square square8"></div>
+                <div class="square square0" data-sqNum = '0'></div>
+                <div class="square square1" data-sqNum = '1'></div>
+                <div class="square square2" data-sqNum = '2'></div>
+                <div class="square square3" data-sqNum = '3'></div>
+                <div class="square square4" data-sqNum = '4'></div>
+                <div class="square square5" data-sqNum = '5'></div>
+                <div class="square square6" data-sqNum = '6'></div>
+                <div class="square square7" data-sqNum = '7'></div>
+                <div class="square square8" data-sqNum = '8'></div>
             </div>
         </div>
-        <div id="controls"></div>
+        <div id="controls">
+            <button class="start">Start</button>
+            <div class="player1Disp">Player1</div>
+            <div class="player2Disp">Player2</div>
+            
+        </div>
         <div id="footer">Footer</div>
     </div>
 </body>

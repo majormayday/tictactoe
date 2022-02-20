@@ -10,7 +10,7 @@ html {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1.5fr 1fr 2fr;
   grid-template-rows: var(--headerHeight) 1fr var(--footerHeight);
 }
 #header {
@@ -32,15 +32,41 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+/*Controls stuff*/
+#controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start {
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 2rem;
+  border-width: 0px;
+  background-color: lightgreen;
 }
 
+.player1Disp {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.player2Disp {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+/*Board stuff */
 #tttBoard {
   flex: 1;
-  height: 400px;
-  max-width: 400px;
+  max-height: 500px;
+  max-width: 450px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  align-content: center;
 }
 
 .square {
@@ -51,4 +77,47 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
+  width: 150px;
+  height: 150px;
+}
+#notifications {
+  font-size: 3rem;
+}
+
+/*set ttt look normal */
+.square0 {
+  border-left-width: 0px;
+  border-top-width: 0px;
+}
+
+.square1 {
+  border-top-width: 0px;
+}
+.square2 {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+}
+.square3 {
+  border-left-width: 0px;
+}
+
+.square5 {
+  border-right-width: 0px;
+  border-left-width: 0px;
+}
+.square6 {
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+}
+.square7 {
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+}
+.square8 {
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
 }
